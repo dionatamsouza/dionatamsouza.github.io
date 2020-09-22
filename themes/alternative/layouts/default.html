@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Blog do Programador</title>
+    
+    <!-- Vendor -->
+    <link rel="stylesheet" href="/themes/alternative/css/style.css">
+    
+    <!-- Live -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- Custom -->
+    <script type="text/javascript" src="/themes/alternative/js/functions.js"></script>
+    <link rel="stylesheet" href="/themes/alternative/css/custom.css">
+</head>
+
+<body id="myPage" onload="init()">
+
+<!-- Header -->
+<!-- Image Header -->
+<div class="w3-display-container w3-animate-opacity w3-content w3-wide" style="max-width:100%;" id="home">
+    <img class="w3-image" src="/themes/alternative/images/bg.webp" alt="bg" width="100%">
+    <div class="w3-display-middle w3-margin-top w3-center">
+        <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>Blog</b></span> <span class="w3-hide-small w3-text-light-grey">Dev</span></h1>
+    </div>
+</div>
+
+<!-- Menu -->
+<div class="w3-top fw-sticky">
+    
+    <!-- Telas Grandes -->
+    <div class="w3-bar w3-theme-d2 w3-left-align">
+        <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars" aria-hidden="true"></i></a>
+        <a href="http://dionatan.com.br" target="_self" class="w3-bar-item w3-button"><i class="fa fa-home w3-margin-right" aria-hidden="true"></i>Início</a>
+        <a href="https://dionatamsouza.github.io" class="w3-bar-item w3-button w3-hide-small w3-hover-white" id="github-menu-blog"><i class="fa fa-book w3-margin-right" aria-hidden="true"></i>Blog</a>
+        <a href="http://dionatan.com.br/coronavirus" target="_self" class="w3-bar-item w3-button w3-hide-small w3-hover-white" id="github-menu-coronavirus"><i class="fa fa-user-md w3-margin-right" aria-hidden="true"></i>Coronavírus</a>
+        <a href="http://ccanet.com.br/" target="_blank" class="w3-bar-item w3-button w3-hide-small w3-hover-white w3-right">CCANet</a>
+        <a href="http://fintel.com.br/" target="_blank" class="w3-bar-item w3-button w3-hide-small w3-hover-white w3-right">Fintel</a>
+        <a href="javascript:void(0);" target="_self" class="w3-bar-item w3-button w3-hide-small w3-hover-white w3-right"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+    </div>
+    
+    <!-- Dispositivos Móveis -->
+    <div id="navSmall" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+        <a href="http://ccanet.com.br/" target="_blank" class="w3-bar-item w3-button">CCANet</a>
+        <a href="http://fintel.com.br/" target="_blank" class="w3-bar-item w3-button">Fintel</a>
+        <a href="https://dionatamsouza.github.io" class="w3-bar-item w3-button w3-light-gray">Blog</a>
+    </div>
+    
+</div>
+
+<!-- Content -->
+<div id="github_page_default_content" class="w3-container" style="display:none;">
+{{ content }}
+</div>
+
+<!-- Loader -->
+<div id="github_page_default_loader" style="display: block; padding:20px;">
+    <div id="loader" style="margin-left: auto; margin-right: auto;"></div>
+</div>    
+
+<!-- Footer -->
+<footer class="w3-display-container w3-text-white">
+    <img src="/themes/alternative/images/tech.webp" alt="Tech" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-center">
+        <h4>Contato</h4>
+        <a class="w3-button w3-round w3-large w3-light-gray" target="_blank" href="https://github.com/dionatamsouza/" title="Github"><i class="fa fa-github"></i></a>
+        <a class="w3-button w3-round w3-large w3-light-gray" target="_blank" href="https://t.me/dionatan_fintel" title="Telegram"><i class="fa fa-telegram"></i></a>
+        <a class="w3-button w3-round w3-large w3-light-gray" target="_blank" href="https://www.linkedin.com/in/dionatan-souza-21a27a161/" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+        <p class="w3-tiny">Copyright &copy; 2019 - Todos os direitos reservados</p>
+    </div>
+</footer>
+
+
+</body>
+</html>
