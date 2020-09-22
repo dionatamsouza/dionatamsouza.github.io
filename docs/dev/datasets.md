@@ -1,0 +1,23 @@
+# Datasets
+
+- https://data.world/datasets/brasil
+- https://brasil.io/datasets/
+- https://www.reddit.com/r/datasets/
+- http://www.portaldatransparencia.gov.br/
+- https://github.com/BuzzFeedNews
+- https://www.quandl.com/search
+- https://dumps.wikimedia.org/
+- https://old.datahub.io/dataset
+- https://www.kaggle.com/datasets
+- http://www.dados.gov.br/
+- https://github.com/fivethirtyeight/data
+- http://dados.mj.gov.br/dataset
+- https://dadosabertos.bcb.gov.br/dataset
+- https://dadosabertos.capes.gov.br/dataset
+- https://datasf.org/
+- https://www.data.gov/
+- https://www.lexml.gov.br/
+- http://www.dados.gov.br/en/dataset
+- https://khushabtex.com/api/dataset/documentos-brasil/
+- http://basedosdados.org/en/dataset/groups/diretorio-municipios-brasileiros
+- https://www.gov.br/pt-br
