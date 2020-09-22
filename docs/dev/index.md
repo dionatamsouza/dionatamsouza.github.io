@@ -64,7 +64,7 @@
 
 
 # Artigos
-[Glossário](./glossario)
-[Datasets](./datasets)
+* [Glossário](./glossario)
+* [Datasets](./datasets)
 
 
