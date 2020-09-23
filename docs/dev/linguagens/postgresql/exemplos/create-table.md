@@ -3,27 +3,28 @@
 
 ```
         -- EXEMPLO DE CREATE TABLE
-    CREATE TABLE pessoal.assentamento_evento_automatico (
+    CREATE TABLE myschema.mynewtable (
         
         -- Define os campos da tabela
-        cod_assentamento   integer,
-        cod_evento         integer, 
-        timestamp          timestamp  DEFAULT now(),
+        id                integer,
+        codigo            varchar(8), 
+        id_responsavel    integer,
+        timestamp         timestamp  DEFAULT now(),
         
         -- Define a chave primaria
-        CONSTRAINT pk_assentamento_evento_automatico
-            PRIMARY KEY ( cod_assentamento, cod_evento, timestamp ),
+        CONSTRAINT pk_mynewtable
+            PRIMARY KEY ( id, timestamp ),
         
         -- Define as chaves unicas
-        CONSTRAINT uk_assentamento_evento_automatico_1
-            UNIQUE ( cod_evento ),
+        CONSTRAINT uk_mynewtable_1
+            UNIQUE ( codigo, timestamp ),
         
         -- Define as chaves estrangeiras
-        CONSTRAINT fk_assentamento_evento_automatico_1
-            FOREIGN KEY ( cod_assentamento, timestamp )
-            REFERENCES pessoal.assentamento  ( cod_assentamento, timestamp ),
+        CONSTRAINT fk_mynewtable_1
+            FOREIGN KEY ( id_responsavel, timestamp )
+            REFERENCES pessoal.assentamento  ( id_responsavel, timestamp ),
         
-        CONSTRAINT fk_assentamento_evento_automatico_2
+        CONSTRAINT fk_mynewtable_2
             FOREIGN KEY ( cod_evento )
             REFERENCES folhapagamento.evento ( cod_evento )
         
