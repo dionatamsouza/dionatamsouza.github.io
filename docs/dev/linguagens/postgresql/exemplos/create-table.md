@@ -37,8 +37,9 @@
         -- CREATE TABLE COM SELECT
     CREATE TABLE migracao_tmp.aux_ajuste_salario_historico_matriculas AS
 
-    SELECT NULL :: INTEGER AS cod_contrato
-         , NULL :: INTEGER AS matricula_referencia_sam30
+    SELECT NULL :: INTEGER       AS id
+         , NULL :: VARCHAR(3)    AS codigo
+         , NULL :: TEXT          AS descricao
      LIMIT 0 ; -- limit 0 carrega somente estrutura, sem dados.
 ```
 
