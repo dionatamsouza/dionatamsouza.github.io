@@ -1,5 +1,4 @@
 ---
 layout: mainpage
-title:  "Welcome!"
 ---
 
