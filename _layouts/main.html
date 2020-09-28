@@ -12,47 +12,47 @@ body {
     padding:0px;
 }
 
-#item1 { grid-area: header; }
-#item2 { grid-area: menu;   }
-#item3 { grid-area: main;   }
-#item4 { grid-area: right;  }
-#item5 { grid-area: footer; }
-
-.grid-container {
-  display: grid;
-  grid-template-areas:
-    'header header header header header header '
-    'menu   main   main   main   right  right  '
-    'menu   footer footer footer footer footer ';
-  grid-gap: 0px;
-  background-color: #fff;
-  padding: 0px;
-  width: 100vw;
-  height: 100vh;
-}
-
-.grid-container > div {
-  background-color: rgba(255, 255, 255, 0.8);
-  text-align: center;
-  padding: 0px 0;
-  font-size: 30px;
-}
-
 iframe {
     border:   none;
-    overflow: hidden;
+    overflow: auto;
+}
+
+#frame_1 { grid-area: header; }
+#frame_2 { grid-area: menu;   }
+#frame_3 { grid-area: main;   }
+#frame_4 { grid-area: right;  }
+#frame_5 { grid-area: footer; }
+
+#container_grid {
+    display: grid;
+    grid-template-areas:
+        'header header header header header header '
+        'menu   main   main   main   right  right  '
+        'menu   footer footer footer footer footer ';
+    grid-gap: 0px;
+    background-color: #fff;
+    padding: 0px;
+    width:  100vw;
+    height: 100vh;
+}
+
+#container_grid > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 0px 0;
+    font-size: 30px;
 }
 
 </style>
 </head>
 <body>
 
-<div class="grid-container">
-    <iframe id="item1" name="item1" src="/"></iframe>
-    <iframe id="item2" name="item2" src="/"></iframe>
-    <iframe id="item3" name="item3" src="/"></iframe>
-    <iframe id="item4" name="item4" src="/"></iframe>
-    <iframe id="item5" name="item5" src="/"></iframe>
+<div id="container_grid">
+    <iframe id="frame_1" name="frame_1" src="/"></iframe>
+    <iframe id="frame_2" name="frame_2" src="/"></iframe>
+    <iframe id="frame_3" name="frame_3" src="/"></iframe>
+    <iframe id="frame_4" name="frame_4" src="/"></iframe>
+    <iframe id="frame_5" name="frame_5" src="/"></iframe>
 </div>
 
 </body>
