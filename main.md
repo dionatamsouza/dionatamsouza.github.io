@@ -1,4 +1,4 @@
 ---
-layout: mainpage
+layout: main
 ---
 
