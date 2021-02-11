@@ -1,5 +1,6 @@
 @startuml
 actor cliente
+actor cliente2
 node app
 node carro
 node tshirt
@@ -7,4 +8,5 @@ node tshirt
 carro -> app
 app -> cliente
 cliente -> tshirt
+cliente2 -> tshirt
 @enduml
